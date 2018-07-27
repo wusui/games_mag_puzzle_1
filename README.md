@@ -34,13 +34,12 @@ Fields are:
 
 ### Game directory and puzzle.txt format
 
-Before running this program, the user also needs to create a puzzle to be used.
+Before running this program, the user also needs to create a puzzle to be used.  The text 'Contest-directory' in the rest of this document is a directory name chosen by the user. 
 
-This puzzle is in games/<contest-directory>/puzzle.txt.  To create the puzzle, do the following:
+This puzzle is in games/contest-directory/puzzle.txt.  To create the puzzle, do the following:
 * cd games
-* mkdir <contest-directory>
-* cd <contest-directory>
-* vi puzzle.txt
+* mkdir contest-directory
+d* vi puzzle.txt
 
 Puzzle.txt will contain entries defining each of the individual figures in the contest (both squares and circles).  Each line in puzzle.txt will represent an entry, with fields being deliniated by vertical bars ('|').
 
@@ -64,7 +63,7 @@ The second entry here is a movie (square) located to the right of the previous f
 
 ## Running this program
 
-To run this program, cd role_playing and run python3 start_module.py.  It takes about 5 minutes to run and produces a solution file named games/<directory>/solution.html.
+To run this program, cd role_playing and run python3 start_module.py.  It takes about 5 minutes to run and produces a solution file named games/contest-directory/solution.html.
 
 ### Files Created
 
@@ -72,4 +71,4 @@ There are two major tasks in this program.  The first is to scan imdb files for 
 
 These json files that are created can act as checkpoints for this program.  If one keeps the movies.json file around, then when this program is rerun the first step is skipped.  If one keeps the answers.json file around, then the second step is skipped.
 
-Before rerunning this problem, one should remove games/<directory>/movies.json, games/<directory>/answers.json, and games/<directory>/solution.txt.
+Before rerunning this problem, one should remove games/contest-directory/movies.json, games/contest-directory/answers.json, and games/contest-directory/solution.txt.
