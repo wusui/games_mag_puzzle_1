@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="%d" height="%d" style="display:none;"></canvas>
+    <img id="canvasImg">
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var hspc;
+      context.lineWidth = 2;
+      context.strokeStyle = '#000000';
+      context.font = "Bold %dpx Arial";
